@@ -1,0 +1,53 @@
+// data ko kis tarah se memory m rakha jata hai aur kis tarah se access kiya jata hai , isse pata chalta hai ki data kis type ka h
+// so two categorization : (1). Primitive  (2). Non-Primitve
+
+
+// Primitive (call by value datatypes)
+    
+    // 7 types : String, Number, Boolean, null, undefined, Symbol, BigInt
+
+const name = "Kunal"
+const age = 24
+const isDrugged = false
+const haveDrug = null
+let job = undefined
+let userEmail; // also undefined
+const id = Symbol('123')
+const bigNumber = 11138651971461983275490
+
+
+// Non-Primitive (Refernce type) : jinka memory m refernce allocate kiya ja skta hai(like pointer in c++)
+
+    // Array, Objects, Functions
+
+const heros = ["Shaktiman", "naagraj","doga"] // Arrays
+let myObj = {           // Objects datatype
+    name:"kunal",
+    age: 22
+}              
+
+const myFunction = function(){
+    console.log('Hello World')
+}
+
+
+// possible return values of typeof :
+    /*
+        datatype    :   result
+        
+        undefined : undefined
+        null : object
+        boolean : boolean
+        Number  : number
+        String  : string
+        Symbol  : symbol
+        Function : function
+        any other object : object
+    */
+
+// Javascript is dynamically typed language means            (1). A single variable can hold values of different data types throughout the program's execution. For example, a variable initially holding a number can later be assigned a string.                                                   (2). Type checking occurs at runtime: Unlike statically typed languages (like Java or C++) where type checks are performed during compilation, JavaScript performs type checks when the code is actually executing.
+
+
+
+
+
