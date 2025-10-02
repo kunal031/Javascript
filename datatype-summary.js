@@ -2,6 +2,8 @@
 // so two categorization : (1). Primitive  (2). Non-Primitve
 
 
+
+
 // Primitive (call by value datatypes)
     
     // 7 types : String, Number, Boolean, null, undefined, Symbol, BigInt
@@ -50,4 +52,41 @@ const myFunction = function(){
 
 
 
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+
+// Stack Memory and Heap Memory 
+/*  how both memory work and store data */
+
+/**
+ * Stack memory store primitive datatypes(7 types)
+ * while heap store non-primitve datatypes(function, objects,...)
+ * 
+ * 
+ */
+
+let original = "Kunal Raj"
+let duplicate = original
+
+duplicate = "Kunal Kashyap"
+
+console.log(original)
+console.log(duplicate)
+
+/*
+ * here value of duplicate doesnot change original value 
+i.e. how call by value work. In stack primitive types data will be alloted a memory where their values will be stored so change in one does not change other.
+
+ * but when in case of non-primitve types (userOne,userTwo) , variables are still stored in stacks but they get refrence of values present in heap memory so change of one change other.
+ */
+
+let userOne = {
+    // Name : "Kunal Raj",
+    email : "kunal@gmail.com"
+}
+
+let userTwo = userOne
+userTwo.email="kunalraj@gmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
